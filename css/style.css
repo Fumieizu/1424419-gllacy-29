@@ -1,0 +1,323 @@
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #323232;
+  --basic-dark-black: #353535;
+  --dull-white: rgba(255, 255, 255, 0.2);
+  --basic-gray: #999999;
+  --basic-dark-gray: #849D8F;
+  --nav-hover: #FBDED7;
+  --nav-push: #F6B5A5;
+  --nav-on-page: #D07058;
+  --catalog-push: #EDEDED;
+  --mailing-white: #F8F7F4;
+  --mailing-gary: #5A5A5A;
+  --basic-button: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  --hover-button: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  --push-button: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  --push-button-shadow: inset 0px 2px 2px #942718;
+  --hover-slider: rgba(255, 255, 255, 0.4);
+  --basic-shadow: inset 0px 2px 1px #696969;
+  --shadow-slide-button: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  --shadow-hover-slide-button: 0px 2px 2px #AC1000;
+  --basic-berry: #ef3038;
+  --basic-choco: #d2691e;
+  --shadow-banner-button: 0px 2px 2px rgba(85, 8, 0, 0.54);
+  --shadow-hover-banner-button:  0px 1px 2px #AC1000;
+  --shadow-item-price: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  --shadow-product-item: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  --advantage: #f5f5dc;
+  --white-link-hover: #FFBC9E;
+  --white-link-hover-border: rgba(255, 188, 158, 0.3);
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-white);
+  background: var(--basic-dark-gray)
+}
+
+a {
+  text-decoration: none;
+}
+
+.white-link {
+  color: var(--basic-white);
+  border-bottom: 1px solid var(--dull-white);
+}
+
+.white-link:hover, .white-link:active {
+  color: var(--white-link-hover);
+  border-bottom: 1px solid var(--white-link-hover-border);
+}
+
+.main-nav li {
+  list-style: none;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.nav-button {
+  color: var(--basic-white);
+  border-bottom: 1px solid var(--dull-white);
+}
+
+.nav-button:hover {
+  padding: 9px 13px 11px 13px;
+  background: var(--basic-white);
+  border-radius: 26px;
+  color: var(--basic-black);
+  border-color: transparent;
+}
+
+.nav-button:active {
+  background: var(--catalog-push);
+  box-shadow: var(--basic-shadow);
+  border-color: transparent;
+}
+
+.info p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.info-phone-number {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.slide-title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.button {
+  color: var(--basic-white);
+}
+
+.slide-button {
+  padding: 9px 40px 10px 40px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  background: var(--basic-button);
+  border-radius: 70px;
+  box-shadow: var(--shadow-slide-button);
+}
+
+.slide-button:hover {
+  box-shadow: var(--shadow-hover-slide-button);
+  background: var(--hover-button);
+}
+
+.slide-button:active {
+  box-shadow: var(--push-button-shadow);
+  background: var(--push-button);
+}
+
+.slider-button {
+  cursor: pointer;
+  padding: 8.5px;
+  border-radius: 50%;
+  background: none;
+  border: 2px solid var(--basic-white);
+  margin-right: 8px;
+  outline: none;
+}
+
+.slider-button:hover {
+  background: var(--hover-slider);
+}
+
+.active-button, .active-button:hover {
+  background: var(--basic-white);
+  cursor: default;
+}
+
+.banner-berry {
+  font-weight: bold;
+  background: var(--basic-berry);
+}
+
+.banner-choco {
+  font-weight: bold;
+  background: var(--basic-choco);
+}
+
+.banner-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.banner-text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.banner-button {
+  padding: 15px 22px 16px 22px;
+  background: var(--basic-button);
+  border-radius: 70px;
+  box-shadow: var(--shadow-banner-button);
+}
+
+.banner-button:hover {
+  background: var(--hover-button);
+  box-shadow: var(--shadow-hover-banner-button);
+}
+
+.banner-button:active {
+  background: var(--push-button);
+  box-shadow: var(--push-button-shadow);
+}
+
+.product-item {
+  list-style: none;
+}
+
+.product-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.item-price {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+  text-shadow: var(--shadow-item-price);
+}
+
+.item-price-small {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  text-shadow: var(--shadow-item-price);
+}
+
+.product-item:hover {
+  background: var(--dull-white);
+  box-shadow: var(--shadow-product-item);
+}
+
+.item-button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 16px 12px 16px;
+  border-radius: 50px;
+  background: var(--basic-button);
+  box-shadow: var(--shadow-hover-banner-button);
+}
+
+.advantage-item {
+  list-style: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-black);
+}
+
+.advantages {
+  background: var(--advantage);
+}
+
+.advantage-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black)
+}
+
+.news-advert {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-black);
+}
+
+.news-link {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+  border-bottom: 2px solid var(--basic-dark-black);
+}
+
+.news-link:hover, .news-link:active {
+  color: var(--white-link-hover);
+  border-bottom: 2px solid var(--white-link-hover-border);
+}
+
+.mailing {
+  background: var(--mailing-white);
+}
+
+.mailing-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--mailing-gary);
+}
+
+.address {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+
+.address b {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.btn-open-form {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 13px 28px 13px 28px;
+  border-radius: 70px;
+  background: var(--basic-button);
+  box-shadow: var(--shadow-slide-button);
+}
+
+.social-item {
+  list-style: none;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.menu-item b {
+  font-weight: bold;
+}
+
+.menu-link {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.footer-copyright {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
