@@ -77,6 +77,7 @@ a {
 }
 
 .nav-button:active {
+  padding: 9px 13px 11px 13px;
   background: var(--catalog-push);
   box-shadow: var(--basic-shadow);
   border-color: transparent;
@@ -320,4 +321,59 @@ a {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
+}
+
+.on-page {
+  padding: 9px 14px 11px 14px;
+  border-radius: 26px;
+  color: var(--basic-white);
+  background: var(--nav-on-page);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-active {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--basic-black);
+  width: 26px;
+  border-radius: 50%;
+  background: var(--basic-white);
+  text-align: center;
+}
+.pagination-item a {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--basic-white);
+  width: 26px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+
+.pagination-item a:hover {
+  background: var(--dull-white);
+  border-radius: 50%;
+}
+
+.pagination-item a:active {
+  background: var(--basic-white);
+  border-radius: 50%;
+  color: var(--basic-black);
+}
+
+.arrow-left {
+  opacity: 0.2;
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
