@@ -47,6 +47,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .white-link {
   color: var(--basic-white);
   border-bottom: 1px solid var(--dull-white);
@@ -187,6 +192,10 @@ a {
 
 .product-item {
   list-style: none;
+}
+
+.product-item img {
+  border-radius: 50%;
 }
 
 .product-link {
