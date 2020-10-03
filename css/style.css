@@ -238,7 +238,7 @@ img {
 .products-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0;
+  margin: 0 -13px;
   padding: 0;
 }
 
@@ -460,8 +460,8 @@ img {
 
 .pagination-list {
   list-style: none;
-  margin-left: 925px;
   margin-top: 87px;
+  text-align: right;
 }
 
 .pagination-list li {
