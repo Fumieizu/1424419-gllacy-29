@@ -282,9 +282,9 @@ img {
 }
 
 .banners {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
   margin-bottom: 35px;
 }
 
@@ -297,18 +297,19 @@ img {
   min-height: 229px;
   border-radius: 16px;
   align-items: flex-start;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .banner-berry {
   background-image: url("../img/raspberry.jpg");
-  background-position: center;
   background-color: var(--basic-berry);
   font-weight: bold;
 }
 
 .banner-choco {
   background-image: url("../img/chocolate.jpg");
-  background-position: center;
   background-color: var(--basic-choco);
   font-weight: bold;
 }
@@ -344,8 +345,8 @@ img {
 }
 
 .products-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0 -13px;
   padding: 0;
 }
@@ -458,9 +459,9 @@ img {
 }
 
 .post-mail-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
   margin-bottom: 40px;
 }
 
@@ -577,10 +578,6 @@ img {
   box-shadow: var(--shadow-slide-button);
 }
 
-.social-item {
-  list-style: none;
-}
-
 .menu-item {
   list-style: none;
 }
@@ -669,10 +666,15 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
-  width: 164px;
+  flex-wrap: wrap;
+  max-width: 288px;
   padding: 0;
   margin: 0;
+}
+
+.social-item {
+  list-style: none;
+  margin-right: 12px;
 }
 
 .icon-social {
@@ -686,18 +688,24 @@ img {
 }
 
 .menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
   margin: 0;
   padding: 0;
-}
-
-.menu-left {
-  margin-right: 30px;
-  margin-left: 5px;
 }
 
 .menu-item {
   font-size: 13px;
   line-height: 18px;
+}
+
+.menu-list li:nth-child(odd) {
+  width: 140px;
+}
+
+.menu-list li:nth-child(even) {
+  width: 170px;
 }
 
 .footer-copyright {
