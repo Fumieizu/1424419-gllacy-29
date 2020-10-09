@@ -10,13 +10,13 @@
   <body class="page-body">
     <header class="main-header">
       <div class="header-container">
-        <a class="logo">
-          <img src="img/logo.svg" width="154" height="64" alt="Лого Глайси Шоп">
-        </a>
         <nav class="main-nav">
+          <a class="logo">
+            <img src="img/logo.svg" width="154" height="64" alt="Лого Глайси Шоп">
+          </a>
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-button on-page" href="#">Кталог</a>
+              <a class="nav-button" href="#">Каталог</a>
             </li>
             <li class="nav-item">
               <a class="nav-button" href="#">Доставка и оплата</a>
@@ -27,13 +27,13 @@
           </ul>
           <ul class="tool-list">
             <li class="tool-item">
-              <a class="button-search" href="#">Поиск</a>
+              <a class="tool-button button-search" href="#"><svg class="icon icon-search" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z" fill="#fff"/></svg></a>
             </li>
             <li class="tool-item">
-              <a class="button-login" href="#">Вход</a>
+              <a class="tool-button button-login" href="#"><svg class="icon icon-login" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg>Вход</a>
             </li>
             <li class="tool-item">
-              <a class="button-cart cart-with-item" href="#">2 товара</a>
+              <a class="tool-button button-cart" href="#"><svg class="icon icon-cart" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9zM7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2z" fill="#fff"/></svg>Пусто</a>
             </li>
           </ul>
         </nav>
@@ -56,7 +56,7 @@
             Сливочное
           </li>
         </ul>
-        <h1>Сливочное мороженое</h1>
+        <h1 class="catalog-title">Сливочное мороженое</h1>
         <section>
           <h2 class="visually-hidden">Фильтр каталога</h2>
           <!--Форма фильтра-->
@@ -162,9 +162,12 @@
             </li>
           </ul>
           <ul class="pagination-list">
-            <li class="arrow arrow-left disable">
+            <li class="arrow arrow-left">
               <a>
-                <img src="https://via.placeholder.com/7x12" width="7" height="12" alt="Страница назад">
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.15889 6.34125L6.06761 11.8512C6.1703 11.9465 6.30937 12 6.45436 12C6.59934 12 6.73841 11.9465 6.84111 11.8512C6.89146 11.8048 6.93142 11.7495 6.95869 11.6885C6.98596 11.6276 7 11.5623 7 11.4962C7 11.4302 6.98596 11.3649 6.95869 11.304C6.93142 11.243 6.89146 11.1877 6.84111 11.1412L1.3084 6.00125L6.84111 0.831247C6.89146 0.784766 6.93142 0.729465 6.95869 0.668535C6.98596 0.607606 7 0.542253 7 0.476248C7 0.410242 6.98596 0.344889 6.95869 0.283959C6.93142 0.22303 6.89146 0.167728 6.84111 0.121247C6.73357 0.0364304 6.59506 -0.00654793 6.45436 0.00124741C6.38391 0.000448227 6.31406 0.013381 6.2493 0.0392141C6.18454 0.0650473 6.12631 0.103209 6.07835 0.151247L0.15889 5.63125C0.108543 5.67773 0.0685816 5.73303 0.0413108 5.79396C0.01404 5.85489 0 5.92024 0 5.98625C0 6.05225 0.01404 6.11761 0.0413108 6.17854C0.0685816 6.23947 0.108543 6.29477 0.15889 6.34125Z" fill="white" fill-opacity="0.2"/>
+                </svg>
+
               </a>
             </li>
             <li class="pagination-item pagination-active">
@@ -184,7 +187,9 @@
             </li>
             <li class="arrow arrow-right">
               <a href="#">
-                <img src="https://via.placeholder.com/7x12" width="7" height="12" alt="Страница вперёд">
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.84111 5.65875L0.932395 0.148752C0.829699 0.05349 0.690626 0 0.545642 0C0.400659 0 0.261586 0.05349 0.15889 0.148752C0.108543 0.195234 0.0685817 0.250534 0.041311 0.311464C0.0140403 0.372393 0 0.437746 0 0.503752C0 0.569758 0.0140403 0.635111 0.041311 0.69604C0.0685817 0.75697 0.108543 0.812271 0.15889 0.858752L5.6916 5.99875L0.15889 11.1688C0.108543 11.2152 0.0685817 11.2705 0.041311 11.3315C0.0140403 11.3924 0 11.4577 0 11.5238C0 11.5898 0.0140403 11.6551 0.041311 11.716C0.0685817 11.777 0.108543 11.8323 0.15889 11.8788C0.266426 11.9636 0.404942 12.0065 0.545642 11.9988C0.616091 11.9996 0.68594 11.9866 0.750698 11.9608C0.815455 11.935 0.873688 11.8968 0.921651 11.8488L6.84111 6.36875C6.89146 6.32227 6.93142 6.26697 6.95869 6.20604C6.98596 6.14511 7 6.07976 7 6.01375C7 5.94775 6.98596 5.88239 6.95869 5.82146C6.93142 5.76053 6.89146 5.70523 6.84111 5.65875Z" fill="white"/>
+                </svg>
               </a>
             </li>
           </ul>
@@ -192,20 +197,20 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="footer-container catalog-footer">
         <section class="footer-social">
           <ul class="social-list">
             <li class="social-item">
-              <a href="#">fb</a>
+              <a href="#"><svg class="icon-social" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 0a16 16 0 100 32 16 16 0 000-32zm4.06 9.45H17v3.45h3v3.44h-3V25h-3v-8.66h-3V12.9h3V9.45A3.25 3.25 0 0117 6h3v3.45h.06z" fill="#fff" fill-opacity=".8"/></svg></a>
             </li>
             <li class="social-item">
-              <a href="#">vk</a>
+              <a href="#"><svg class="icon-social" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.64 14.49c.325 0 .648-.06.95-.18a1.2 1.2 0 00.64-.56 2 2 0 00.15-.8 1.55 1.55 0 00-.18-.7 1.05 1.05 0 00-.61-.51 3 3 0 00-1-.17h-2v3h.57c.59-.05 1.08-.06 1.48-.08zM18.12 17.08A4.851 4.851 0 0017 17h-2.39v3.5h2.45a3.23 3.23 0 001.21-.25c.321-.11.593-.33.77-.62a1.9 1.9 0 00.22-.9 1.76 1.76 0 00-.26-1 1.6 1.6 0 00-.88-.65z" fill="#fff" fill-opacity=".8"/><path d="M16 0a16 16 0 100 32 16 16 0 000-32zm6.6 20.53a3.7 3.7 0 01-1.12 1.33 5.17 5.17 0 01-1.83.88 9.76 9.76 0 01-2.51.27H11V9h5.45a20.61 20.61 0 012.48.11 5.25 5.25 0 011.56.5 2.75 2.75 0 011.19 1.09c.265.473.4 1.008.39 1.55a3.08 3.08 0 01-.54 1.8 3.46 3.46 0 01-1.53 1.2v.07a4 4 0 012.18 1.13 3.2 3.2 0 01.8 2.26 3.841 3.841 0 01-.38 1.82z" fill="#fff" fill-opacity=".8"/></svg></a>
             </li>
             <li class="social-item">
-              <a href="#">ins</a>
+              <a href="#"><svg class="icon-social" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".8" fill="#fff"><path d="M20.92 16A4.96 4.96 0 1111 16c.001-.384.048-.767.14-1.14h-.9v6.84h11.4v-6.84h-.9c.1.373.161.755.18 1.14z"/><path d="M16 18.66A2.66 2.66 0 1013.32 16 2.67 2.67 0 0016 18.66zM21.68 10.3h-3.04v3.04h3.04V10.3z"/><path d="M16 0a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.28 2.28 0 01-2.32 2.3h-11.4A2.29 2.29 0 018 21.7V10.3A2.29 2.29 0 0110.28 8h11.39A2.29 2.29 0 0124 10.3v11.4z"/></g></svg></a>
             </li>
             <li class="social-item">
-              <a href="#">tw</a>
+              <a href="#"><svg class="icon-social" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 0a16 16 0 100 32 16 16 0 000-32zm7.94 12.81c-.25 6.52-3.46 10.83-11 10.7h-.48c-.45 0-4.55-.44-5.35-1.82a7.32 7.32 0 005.12-1.14c-1.05-.29-2.92-.46-3.25-2.85a2.31 2.31 0 001.3.12C9 17 7.53 16.3 7.61 14.17c.418.32.935.482 1.46.46-.77-.23-2.15-3.24-1-4.78 2 1.79 4.07 3.48 7.8 3.64.23-2.21 1.24-3.7 3.17-4.32A3.61 3.61 0 0123 10.31c.74-.23 1.45-.47 2.19-.69a2.21 2.21 0 01-.93 1.71 1.77 1.77 0 001.42-.47 2.9 2.9 0 01-1.74 1.95z" fill="#fff" fill-opacity=".8"/></svg></a>
             </li>
           </ul>
         </section>
@@ -226,6 +231,9 @@
           </ul>
         </section>
         <div class="footer-copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/html-academy.svg" width="108" height="39" alt="Логотип HTML Academy">
+          </a>
           <p>Сделано в <a class="white-link" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a>© 2019</p>
         </div>
       </div>

@@ -300,18 +300,17 @@ img {
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
+  font-weight: bold;
 }
 
 .banner-berry {
   background-image: url("../img/raspberry.jpg");
   background-color: var(--basic-berry);
-  font-weight: bold;
 }
 
 .banner-choco {
   background-image: url("../img/chocolate.jpg");
   background-color: var(--basic-choco);
-  font-weight: bold;
 }
 
 .banner-title {
@@ -599,14 +598,15 @@ img {
 }
 
 .pagination-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   list-style: none;
-  margin-top: 87px;
-  text-align: right;
+  padding: 0;
+  margin: 49px 0 30px;
 }
 
-.pagination-list li {
-  display: inline-block;
-}
 
 .pagination-active {
   font-weight: 500;
@@ -619,7 +619,8 @@ img {
   text-align: center;
 }
 
-.pagination-item a {
+.pagination-list a {
+  margin-left: 5px;
   display: block;
   font-weight: 500;
   font-size: 16px;
@@ -646,10 +647,22 @@ img {
 }
 
 .breadcrumbs {
+  display: flex;
+  padding: 0;
+  margin: -20px 0 0;
   list-style: none;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+}
+
+.breadcrumbs li {
+  margin-right: 22px;
+}
+
+.catalog-title {
+  padding: 0;
+  margin: 9px 0 29px;
 }
 
 .footer-container {
@@ -658,6 +671,10 @@ img {
   width: 1146px;
   margin: 0 auto;
   padding: 18px 27px 25px;
+}
+
+.catalog-footer {
+  border-top: 1px solid var(--dull-white);
 }
 
 .footer-social{
