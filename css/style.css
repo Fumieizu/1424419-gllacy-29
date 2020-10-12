@@ -30,6 +30,9 @@
   --white-link-hover-border: rgba(255, 188, 158, 0.3);
   --border-icon: rgba(255, 255, 255, 0.5);
   --border-icon-active: rgba(255, 255, 255, 0.7);
+  --border-mailing: rgba(178, 178, 178, 0.52);
+  --background-blue: #8996A6;
+  --background-brown: #9D8B84;
 }
 
 body {
@@ -42,7 +45,27 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-white);
-  background: var(--basic-dark-gray);
+}
+
+.site-wrapper {
+  min-width: 1200px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.site-wrapper-1 {
+  background-color: var(--basic-dark-gray);
+  background-image: url("../img/bg-1.png");
+}
+
+.site-wrapper-2 {
+  background-color: var(--background-blue);
+  background-image: url("../img/bg-2.png");
+}
+
+.site-wrapper-3 {
+  background-color: var(--background-brown);
+  background-image: url("../img/bg-3.png");
 }
 
 .page {
@@ -162,24 +185,33 @@ img {
 
 .button-login {
   color: var(--basic-white);
-  padding: 8px 16px;
+  padding: 8px 16px 8px 44px;
   background: var(--dull-white);
   border-radius: 20px;
 }
 
 .button-cart {
   color: var(--basic-white);
-  padding: 8px 16px;
+  padding: 8px 16px 8px 44px;
   background: var(--dull-white);
   border-radius: 20px;
 }
 
-.tool-button:hover {
+.icon-login, .icon-cart {
+  position: absolute;
+  left: 30px;
+  top: 6px;
+}
+
+
+.tool-button:hover,
+.tool-button:focus {
   background: var(--basic-white);
   color: var(--basic-black);
 }
 
-.icon path:hover {
+.tool-button:hover path,
+.tool-button:focus path {
   fill: var(--basic-black);
 }
 
@@ -238,14 +270,14 @@ img {
   text-align: center;
   vertical-align: top;
   margin: 0 auto;
-  padding: 9px 23px;
+  padding: 9px 0;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
   background: var(--basic-button);
   border-radius: 70px;
   box-shadow: var(--shadow-slide-button);
-
+  letter-spacing: 0.05em;
 }
 
 .slide-button:hover {
@@ -264,7 +296,6 @@ img {
   border-radius: 50%;
   background: none;
   border: 2px solid var(--basic-white);
-  margin-right: 8px;
   outline: none;
 }
 
@@ -280,6 +311,9 @@ img {
 .slider-controls {
   position: absolute;
   bottom: 21px;
+  display: flex;
+  width: 79px;
+  justify-content: space-between;
 }
 
 .banners {
@@ -371,6 +405,19 @@ img {
   padding: 6px 13px;
 }
 
+.product-item::before {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  top: 6px;
+  left: 13px;
+  background-image: url("../img/hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 61px 61px;
+}
+
 .product-link {
   font-weight: 500;
   font-size: 16px;
@@ -421,12 +468,18 @@ img {
 }
 
 .advantage-item {
+  display: flex;
+  position: relative;
   width: 540px;
   list-style: none;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-black);
+  box-sizing: border-box;
+  padding-top: 9px;
+  padding-left: 55px;
+  margin-bottom: 13px;
 }
 
 .advantages {
@@ -434,7 +487,7 @@ img {
   background-position: center;
   background-color: var(--advantage);
   border-radius: 16px;
-  padding: 24px 20px;
+  padding: 24px 20px 16px;
   margin: 0 0 40px;
 }
 
@@ -451,11 +504,64 @@ img {
   font-size: 24px;
   line-height: 30px;
   margin: 0;
+  margin-bottom: 7px;
   color: var(--basic-black)
 }
 
 .advantage-text {
-  margin: 21px 0 0;
+  margin: 0;
+}
+
+.ice-cream-item::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/ice-cream.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 49px 49px;
+}
+
+.cow-item::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/cow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 49px 49px;
+}
+
+.leaf-item::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/leaf.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 49px 49px;
+}
+
+.temperature-item::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/temperature.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 49px 49px;
 }
 
 .post-mail-container {
@@ -504,21 +610,27 @@ img {
 }
 
 .mailing {
-  background: var(--mailing-white);
+  background-image: url("../img/mailing.png");
+  background-repeat: no-repeat;
   border-radius: 16px;
+}
 
-  min-height: 220px;
+.mailing-wrapper {
+  background: var(--mailing-white);
+  margin: 5px 6px;
+  border-radius: 16px;
+  min-height: 210px;
   padding: 23px 20px;
   box-sizing:border-box;
 }
 
 .mailing-text {
-  width: 512px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: var(--mailing-gary);
   margin: 0;
+  margin-bottom: 47px;
 }
 
 .map {
@@ -580,6 +692,7 @@ img {
 
 .menu-item {
   list-style: none;
+  position: relative;
 }
 
 .menu-item b {
@@ -590,6 +703,20 @@ img {
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
+  position: relative;
+}
+
+.providers-link::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/heart.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 15px 13px;
+  width: 15px;
+  height: 13px;
+  top: 2px;
+  left: -22px;
 }
 
 .on-page {
