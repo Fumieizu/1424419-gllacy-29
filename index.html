@@ -185,7 +185,8 @@
             <section class="mailing">
               <div class="mailing-wrapper">
                 <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <!--Форма-->
+                <input class="input mailing-input" type="email" name="mailing-email" placeholder="email@example.com">
+                <button class="button mailing-button" type="button">Отправить</button>
               </div>
             </section>
           </div>
@@ -194,7 +195,7 @@
           <!--карта-->
           <div class="address-container">
             <div class="address">
-              <p class="address-text">Адрес главного офиса и офлайн-магазина:</p>
+              <p class="address-text address-title">Адрес главного офиса и офлайн-магазина:</p>
               <p class="address-text"><b>ул. Большая Конюшенная, 19/8, Санкт-Петербург</b></p>
               <p class="address-text call">Для заказов по телефону:</p>
               <a href="tel:+78124502525"><b>8 812 450-25-25</b></a>
@@ -247,5 +248,15 @@
         </div>
       </footer>
     </div>
+  <section class="modal-feedback">
+    <h2>Мы обязательно вам ответим!</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+      <input class="input input-name-feedback" type="text" name="name" placeholder="Имя Фамилия">
+      <input class="input input-email-feedback" type="email" name="feedback-email" placeholder="email@example.com">
+      <textarea class="comment" name="comment" id="comment" placeholder="В свободной форме"></textarea>
+      <button class="button feedback-button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close-button" type="button" aria-label="Зкрыть"></button>
+  </section>
   </body>
 </html>
