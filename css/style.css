@@ -304,6 +304,7 @@ img {
 .cart-with-item {
   color: var(--basic-black);
   background-color: var(--basic-white);
+  margin-left: 10px;
 }
 
 .cart-tooltip {
@@ -448,9 +449,13 @@ img {
   background-color: var(--basic-white);
   color: var(--basic-gray);
   box-sizing: border-box;
-  font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 700;
+}
+
+.input::placeholder {
+  font-weight: 400;
 }
 
 .input:focus {
@@ -469,7 +474,6 @@ img {
 .input-search:focus {
   padding: 12px 14px;
   border: 2px solid var(--input-border-focus);
-  font-weight: 700;
   color: var(--basic-black);
 }
 
@@ -727,11 +731,11 @@ img {
   width: 293px;
   box-sizing: border-box;
   list-style: none;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 }
 
 .product-item h3 {
-  padding: 0 13px;
+  padding: 0 18px;
   margin: 26px 0 15px;
   text-align: center;
 }
@@ -1138,7 +1142,7 @@ img {
   resize: vertical;
   padding: 12px;
   margin-bottom: 25px;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 }
@@ -1151,9 +1155,12 @@ img {
 .comment:focus {
   padding: 11px;
   border: 2px solid var(--input-border-focus);
-  font-weight: 700;
   color: var(--basic-black);
   outline: none;
+}
+
+.comment::placeholder {
+  font-weight: 400;
 }
 
 .feedback-button {
@@ -1233,11 +1240,11 @@ img {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 49px 0 30px;
+  margin: 45px -6px 28px;
 }
 
 .pagination-list li {
-  margin-left: 5px;
+  margin-left: 4px;
 }
 
 .pagination-list .pagination-link-active,
@@ -1279,7 +1286,7 @@ img {
   background-position: 0 0;
   background-size: 7px 12px;
   top: 7px;
-  left: 9.5px;
+  left: 7.5px;
 }
 
 .arrow-right-link::before {
@@ -1292,7 +1299,7 @@ img {
   background-position: 0 0;
   background-size: 7px 12px;
   top: 7px;
-  left: 9.5px;
+  left: 12.5px;
 }
 
 .disable {
@@ -1302,7 +1309,7 @@ img {
 .breadcrumbs {
   display: flex;
   padding: 0;
-  margin: -20px 0 0;
+  margin: -25px 0 0;
   list-style: none;
   font-weight: normal;
   font-size: 14px;
@@ -1322,12 +1329,15 @@ img {
 }
 
 .catalog-title {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
   padding: 0;
-  margin: 9px 0 29px;
+  margin: 2px 0 29px;
 }
 
 .filter {
-  margin-bottom: 32px;
+  margin-bottom: 21px;
 }
 
 .filter-form {
@@ -1343,6 +1353,14 @@ img {
   border: none;
   margin: 0 15px 14px 0;
   padding: 0;
+}
+
+.filter-form legend {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 16px;
+  margin-bottom: 6px;
 }
 
 .filter-form label {
@@ -1441,13 +1459,34 @@ img {
   left: 132px;
 }
 
+.min-price, .max-price {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.min-price {
+  margin-left: -5px;
+}
+
+.max-price {
+  margin-left: -8px;
+}
+
+.price-legend label {
+  display: inline-block;
+}
+
 .input-min-price, .input-max-price {
-  width: 33px;
+  width: 28px;
   background: none;
   text-align: center;
   border: none;
   color: var(--basic-white);
   padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .fatness-list {
@@ -1504,10 +1543,14 @@ img {
   flex-wrap: wrap;
   margin: 0;
   background-color: var(--dull-white);
-  padding: 9px 14px;
+  padding: 9px 0px 9px 14px;
   border-radius: 20px;
   width: 711px;
   box-sizing: border-box;
+}
+
+.filter-checkbox {
+  margin-right: 22px;
 }
 
 .filter-input-checkbox + label::before {
@@ -1562,11 +1605,11 @@ img {
 .filter-button {
   color: var(--basic-white);
   border: 2px solid var(--basic-white);
-  padding: 7px 29px;
+  padding: 7px 27px;
   border-radius: 20px;
   background: var(--dull-white);
   cursor: pointer;
-  margin-top: 4px;
+  margin-top: 10px;
   align-self: center;
 }
 
