@@ -94,6 +94,8 @@ body {
 }
 
 .header-container {
+  display: flex;
+  flex-wrap: wrap;
   width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
@@ -129,6 +131,7 @@ img {
 
 .main-nav {
   display: flex;
+  width: 86%;
 }
 
 .logo {
@@ -147,7 +150,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 0 24px;
-  padding: 23px 0 0;
+  padding: 21px 0 0;
 }
 
 .catalog-link-current {
@@ -191,7 +194,10 @@ img {
 }
 
 
-.submenu-list:focus-within {
+.submenu-list:focus-within,
+.search-tooltip:focus-within,
+.login-tooltip:focus-within,
+.cart-tooltip:focus-within {
   opacity: 1;
   pointer-events: auto;
 }
@@ -261,7 +267,7 @@ img {
 .tool-list {
   display: flex;
   justify-content: flex-end;
-  margin: 0 0 0 auto;
+  margin: 0 -6px 0 auto;
   padding: 23px 0 0;
 }
 
@@ -277,7 +283,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 10px 12px;
+  margin: 0 0 10px 11px;
 }
 
 .button-search {
@@ -555,6 +561,7 @@ img {
 }
 
 .info {
+  margin-left: auto;
   display: block;
   text-align: right;
 }
@@ -1589,15 +1596,17 @@ img {
 }
 
 .filter-input-checkbox + label:hover::before,
-.filter-input-radio + label:hover::before {
-  border-color: var(--basic-white);
-  cursor: default;
-}
-
+.filter-input-radio + label:hover::before,
 .filter-input-checkbox + label:hover::after,
-.filter-input-radio + label:hover::after {
+.filter-input-radio + label:hover::after,
+.filter-input-checkbox:focus + label,
+.filter-input-radio:focus + label,
+.filter-input-radio:focus + label::before,
+.filter-input-radio:focus + label::after,
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:focus + label::after {
+  border-color: var(--basic-white);
   opacity: 1;
-  cursor: default;
 }
 
 .filter-input-radio:disabled + label::before,
