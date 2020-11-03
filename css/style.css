@@ -1390,6 +1390,7 @@ img {
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+  z-index: 2;
 }
 
 .sort-select-container:hover .sort-select,
@@ -1416,6 +1417,7 @@ img {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 10px solid var(--basic-white);
+  z-index: 1;
 }
 
 .range-filter {
