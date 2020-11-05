@@ -11,7 +11,7 @@
     <div class="site-wrapper site-wrapper-catalog">
       <header class="main-header">
         <div class="header-container">
-          <a class="logo" href="index.html">
+          <a class="logo" aria-label="Ссылка на главную страницу Глайси Шоп" href="index.html">
             <img src="img/logo.svg" width="154" height="64" alt="Лого Глайси Шоп">
           </a>
           <nav class="main-nav">
@@ -132,7 +132,8 @@
               <fieldset>
                 <legend>Сортировка:</legend>
                 <div class="sort-select-container">
-                  <select class="sort-select" name="sort">
+                  <label class="visually-hidden" for="sort-select">Селектор сортировки</label>
+                  <select class="sort-select" id="sort-select" name="sort">
                     <option value="popular" selected>по популярности</option>
                     <option value="cheap ">сначала недорогие</option>
                     <option value="expensive">сначала дорогие</option>
@@ -375,10 +376,10 @@
             </ul>
           </section>
           <div class="footer-copyright">
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a aria-label="Ссылка на HTML Academy" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/html-academy.svg" width="108" height="39" alt="Логотип HTML Academy">
             </a>
-            <p>Сделано в <a class="white-link" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a>© 2019</p>
+            <p>Сделано в <a class="white-link" aria-label="Ссылка на HTML Academy" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a>© 2019</p>
           </div>
         </div>
       </footer>

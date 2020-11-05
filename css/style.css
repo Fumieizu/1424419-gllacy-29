@@ -246,6 +246,7 @@ img {
 .nav-button {
   display: inline-block;
   padding-top: 8px;
+  vertical-align: top;
   color: var(--basic-white);
   border-bottom: 1px solid var(--dull-white);
 }
@@ -706,7 +707,7 @@ img {
   border-radius: 16px;
   align-items: flex-start;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   font-weight: bold;
 }
@@ -850,7 +851,7 @@ img {
 }
 
 .advantages {
-  background-image: url("../img/advantage.png");
+  background-image: url("../img/advantage.jpg");
   background-position: center;
   background-color: var(--advantage);
   border-radius: 16px;
@@ -1078,6 +1079,7 @@ img {
 
 .btn-open-form {
   display: inline-block;
+  vertical-align: top;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -1508,10 +1510,6 @@ img {
 
 .max-price {
   margin-left: -2px;
-}
-
-.price-legend label {
-  display: inline-block;
 }
 
 .input-min-price, .input-max-price {
